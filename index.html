@@ -1,368 +1,599 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NOVA — Cosmic Experience</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- ========== PRELOADER ========== -->
-  <div id="preloader">
-    <div class="loader-ring"></div>
-    <div class="loader-ring"></div>
-    <div class="loader-ring"></div>
-    <p class="loader-text">INITIALIZING UNIVERSE</p>
-  </div>
-
-  <!-- ========== CUSTOM CURSOR ========== -->
-  <div class="cursor-glow" id="cursorGlow"></div>
-
-  <!-- ========== BACKGROUND ORBS ========== -->
-  <div class="space-grid-bg"></div>
-  <div class="cosmic-core-blur orb-top-left"></div>
-  <div class="cosmic-core-blur orb-mid-right"></div>
-  <div class="cosmic-core-blur orb-bottom-left"></div>
-
-  <!--- ========== HEADER ========== --->
-  <header class="main-header" id="mainHeader">
-    <div class="container nav-container">
-      <a href="#" class="logo">
-        <svg width="40" height="40" viewBox="0 0 40 40">
-          <circle cx="20" cy="20" r="18" fill="none" stroke="url(#logoGrad)" stroke-width="2.5" />
-          <path d="M12 20 L18 26 L28 14" stroke="url(#logoGrad)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-          <defs><linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6366f1"/><stop offset="50%" stop-color="#d946ef"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient></defs>
-        </svg>
-        NOVA
-      </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#features" class="nav-link">Features</a></li>
-          <li><a href="#pricing" class="nav-link">Pricing</a></li>
-        </ul>
-      </nav>
-      <div style="display:flex; gap:8px; align-items:center;">
-        <button class="cta-button" id="themeToggle">🌙 Dark</button>
-        <button class="cta-button" id="musicToggle">🔇</button>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOVA — Cosmic Experience</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== PRELOADER ========== -->
+    <div id="preloader">
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <p class="loader-text">INITIALIZING UNIVERSE</p>
     </div>
-  </header>
 
-  <!-- ========== HERO ========== -->
-  <section id="home" class="hero-section fade-in">
-    <div class="container hero-container">
-      <div class="hero-content">
-        <div class="hero-badge" id="badgeText">⚡ Neural Interface v2.0 Active</div>
-        <h1 class="title-text" id="heroTitle">Intelligence <span>Evolved</span></h1>
-        <p class="service-contex">Automate your complex visual workflows, deploy highly intelligent web architectures, and scale infinitely with our modern, fluid AI ecosystem built for pure-coding engineers.</p>
-        <div class="btn-group">
-          <button class="cta-btn-1 ripple-btn" id="confettiBtn">🚀 Launch Experience</button>
-          <button class="cta-btn-2 ripple-btn">Watch Demo ↓</button>
+    <!-- ========== CUSTOM CURSOR ========== -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ========== BACKGROUND ORBS ========== -->
+    <div class="space-grid-bg"></div>
+    <div class="cosmic-core-blur orb-top-left"></div>
+    <div class="cosmic-core-blur orb-mid-right"></div>
+    <div class="cosmic-core-blur orb-bottom-left"></div>
+
+    <!--- ========== HEADER ========== --->
+    <header class="main-header" id="mainHeader">
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <svg width="40" height="40" viewBox="0 0 40 40">
+            <circle
+              cx="20"
+              cy="20"
+              r="18"
+              fill="none"
+              stroke="url(#logoGrad)"
+              stroke-width="2.5"
+            />
+            <path
+              d="M12 20 L18 26 L28 14"
+              stroke="url(#logoGrad)"
+              stroke-width="2.5"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <defs>
+              <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#6366f1" />
+                <stop offset="50%" stop-color="#d946ef" />
+                <stop offset="100%" stop-color="#22d3ee" />
+              </linearGradient>
+            </defs>
+          </svg>
+          NOVA
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          </ul>
+        </nav>
+        <div style="display: flex; gap: 8px; align-items: center"></div>
+      </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero-section fade-in">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge" id="badgeText">
+            ⚡ Neural Interface v2.0 Active
+          </div>
+          <h1 class="title-text" id="heroTitle">
+            Intelligence <span>Evolved</span>
+          </h1>
+          <p class="service-contex">
+            Automate your complex visual workflows, deploy highly intelligent
+            web architectures, and scale infinitely with our modern, fluid AI
+            ecosystem built for pure-coding engineers.
+          </p>
+
+          <div class="counter-container">
+            <div class="counter-item">
+              <span class="counter-number" data-target="15000">0</span
+              ><span class="counter-label">Active Users</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-number" data-target="5000">0</span
+              ><span class="counter-label">Projects Deployed</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-number" data-target="1200">0</span
+              ><span class="counter-label">Happy Clients</span>
+            </div>
+          </div>
         </div>
-        <div class="counter-container">
-          <div class="counter-item"><span class="counter-number" data-target="15000">0</span><span class="counter-label">Active Users</span></div>
-          <div class="counter-item"><span class="counter-number" data-target="5000">0</span><span class="counter-label">Projects Deployed</span></div>
-          <div class="counter-item"><span class="counter-number" data-target="1200">0</span><span class="counter-label">Happy Clients</span></div>
+        <div class="hero-image-box">
+          <div class="plasma-sphere-container" id="sphere3D">
+            <div class="plasma-core"></div>
+            <div class="plasma-shield"></div>
+            <div class="particle-ring"></div>
+          </div>
         </div>
       </div>
-      <div class="hero-image-box">
-        <div class="plasma-sphere-container" id="sphere3D">
-          <div class="plasma-core"></div>
-          <div class="plasma-shield"></div>
-          <div class="particle-ring"></div>
+    </section>
+
+    <!-- ========== TRUSTED ========== -->
+    <section class="trusted-section fade-in">
+      <div class="container trusted-container">
+        <p>TRUSTED BY ULTRA-MODERN CODELABS WORLDWIDE</p>
+        <div class="marquee">
+          <div class="marquee-track">
+            <span>Vercel</span><span>Stripe</span><span>Linear</span
+            ><span>Figma</span> <span>Vercel</span><span>Stripe</span
+            ><span>Linear</span><span>Figma</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== TRUSTED ========== -->
-  <section class="trusted-section fade-in">
-    <div class="container trusted-container">
-      <p>TRUSTED BY ULTRA-MODERN CODELABS WORLDWIDE</p>
-      <div class="marquee">
-        <div class="marquee-track">
-          <span>Vercel</span><span>Stripe</span><span>Linear</span><span>Figma</span>
-          <span>Vercel</span><span>Stripe</span><span>Linear</span><span>Figma</span>
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="services-section fade-in">
+      <div class="container">
+        <h2 class="section-title">Core <span>Superpowers</span></h2>
+        <div class="services-grid">
+          <div class="service-card card-3d">
+            <div class="glass-prism-shimmer"></div>
+            <span class="card-icon">🧠</span>
+            <h3>Neural Engines</h3>
+            <p>
+              Deep learning networks that analyze and optimize your frontend
+              architectures in real-time.
+            </p>
+          </div>
+          <div class="service-card card-3d">
+            <div class="glass-prism-shimmer"></div>
+            <span class="card-icon">⚡</span>
+            <h3>Instant Deploy</h3>
+            <p>
+              Push your code directly to edge servers worldwide with zero cold
+              start delays.
+            </p>
+          </div>
+          <div class="service-card card-3d">
+            <div class="glass-prism-shimmer"></div>
+            <span class="card-icon">🛡️</span>
+            <h3>Quantum Security</h3>
+            <p>
+              Next-generation end-to-end encryption protocols keeping your
+              visual workflows private.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== SERVICES ========== -->
-  <section id="services" class="services-section fade-in">
-    <div class="container">
-      <h2 class="section-title">Core <span>Superpowers</span></h2>
-      <div class="services-grid">
-        <div class="service-card card-3d"><div class="glass-prism-shimmer"></div><span class="card-icon">🧠</span><h3>Neural Engines</h3><p>Deep learning networks that analyze and optimize your frontend architectures in real-time.</p></div>
-        <div class="service-card card-3d"><div class="glass-prism-shimmer"></div><span class="card-icon">⚡</span><h3>Instant Deploy</h3><p>Push your code directly to edge servers worldwide with zero cold start delays.</p></div>
-        <div class="service-card card-3d"><div class="glass-prism-shimmer"></div><span class="card-icon">🛡️</span><h3>Quantum Security</h3><p>Next-generation end-to-end encryption protocols keeping your visual workflows private.</p></div>
+    <!-- ========== FEATURES ========== -->
+    <section id="features" class="features-section fade-in">
+      <div class="container">
+        <h2 class="section-title">
+          Unmatched <span>Fluidity</span> &amp; Control
+        </h2>
+        <p
+          style="
+            text-align: center;
+            color: #94a3b8;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 60px;
+          "
+        >
+          Take complete control over your codebase. No forced AI suggestions, no
+          auto-complete interruptions.
+        </p>
       </div>
-    </div>
-  </section>
 
-  <!-- ========== FEATURES ========== -->
-  <section id="features" class="features-section fade-in">
-    <div class="container">
-      <h2 class="section-title">Unmatched <span>Fluidity</span> &amp; Control</h2>
-      <p style="text-align:center;color:#94a3b8;font-size:18px;max-width:700px;margin:0 auto 60px;">
-        Take complete control over your codebase. No forced AI suggestions, no auto-complete interruptions.
-      </p>
-    </div>
-
-    <!-- Desktop: Horizontal Scroll -->
-    <div class="horizontal-scroll-wrapper desktop-scroll">
-      <div class="horizontal-scroll-track">
-        <div class="hs-item"><div class="hs-icon">01</div><h3>Zero AI Interruption</h3><p>Pure manual coding with no forced suggestions. Total control over every line of code.</p></div>
-        <div class="hs-item"><div class="hs-icon">02</div><h3>Real-Time Metrics</h3><p>Live performance analytics dashboard showing system health and real-time data.</p></div>
-        <div class="hs-item"><div class="hs-icon">03</div><h3>Edge Deployment</h3><p>Deploy to 100+ global edge locations in under 2 seconds with zero configuration.</p></div>
-        <div class="hs-item"><div class="hs-icon">04</div><h3>Quantum Security</h3><p>Military-grade encryption with zero-trust architecture protecting your data.</p></div>
-        <div class="hs-item"><div class="hs-icon">05</div><h3>Infinite Scale</h3><p>Auto-scaling infrastructure handling millions of concurrent requests effortlessly.</p></div>
+      <!-- Desktop: Horizontal Scroll -->
+      <div class="horizontal-scroll-wrapper desktop-scroll">
+        <div class="horizontal-scroll-track">
+          <div class="hs-item">
+            <div class="hs-icon">01</div>
+            <h3>Zero AI Interruption</h3>
+            <p>
+              Pure manual coding with no forced suggestions. Total control over
+              every line of code.
+            </p>
+          </div>
+          <div class="hs-item">
+            <div class="hs-icon">02</div>
+            <h3>Real-Time Metrics</h3>
+            <p>
+              Live performance analytics dashboard showing system health and
+              real-time data.
+            </p>
+          </div>
+          <div class="hs-item">
+            <div class="hs-icon">03</div>
+            <h3>Edge Deployment</h3>
+            <p>
+              Deploy to 100+ global edge locations in under 2 seconds with zero
+              configuration.
+            </p>
+          </div>
+          <div class="hs-item">
+            <div class="hs-icon">04</div>
+            <h3>Quantum Security</h3>
+            <p>
+              Military-grade encryption with zero-trust architecture protecting
+              your data.
+            </p>
+          </div>
+          <div class="hs-item">
+            <div class="hs-icon">05</div>
+            <h3>Infinite Scale</h3>
+            <p>
+              Auto-scaling infrastructure handling millions of concurrent
+              requests effortlessly.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Mobile: Grid -->
-    <div class="mobile-features-grid">
-      <div class="hs-item"><div class="hs-icon">01</div><h3>Zero AI Interruption</h3><p>Pure manual coding with no forced suggestions. Total control over every line of code.</p></div>
-      <div class="hs-item"><div class="hs-icon">02</div><h3>Real-Time Metrics</h3><p>Live performance analytics dashboard showing system health and real-time data.</p></div>
-      <div class="hs-item"><div class="hs-icon">03</div><h3>Edge Deployment</h3><p>Deploy to 100+ global edge locations in under 2 seconds with zero configuration.</p></div>
-      <div class="hs-item"><div class="hs-icon">04</div><h3>Quantum Security</h3><p>Military-grade encryption with zero-trust architecture protecting your data.</p></div>
-      <div class="hs-item"><div class="hs-icon">05</div><h3>Infinite Scale</h3><p>Auto-scaling infrastructure handling millions of concurrent requests effortlessly.</p></div>
-    </div>
-  </section>
-
-  <!-- ========== PRICING ========== -->
-  <section id="pricing" class="pricing-section fade-in">
-    <div class="container pricing-container-wrapper">
-      <div class="aurora-orb orb-deep-purple"></div>
-      <div class="aurora-orb orb-neon-cyan"></div>
-      <div class="aurora-orb orb-hot-magenta"></div>
-      <h2 class="section-title">Flexible <span>Pricing Plans</span></h2>
-      <div class="pricing-grid">
-        <div class="pricing-card card-3d"><div class="glass-prism-shimmer"></div><div class="card-glow-intensity"></div><h4>Startup</h4><div class="price">$49<span>/mo</span></div><ul><li>✦ 5 Core AI Agents</li><li>✦ Standard Analytics</li><li>✦ 24/7 Support Suite</li></ul><button class="price-btn ripple-btn">Choose Startup</button></div>
-        <div class="pricing-card popular card-3d"><div class="glass-prism-shimmer"></div><div class="card-glow-intensity"></div><div class="popular-tag">Most Popular</div><h4>Enterprise</h4><div class="price">$149<span>/mo</span></div><ul><li>✦ Unlimited AI Agents</li><li>✦ Advanced Deep Analytics</li><li>✦ Dedicated Specialist</li></ul><button class="price-btn ripple-btn">Choose Enterprise</button></div>
+      <!-- Mobile: Grid -->
+      <div class="mobile-features-grid">
+        <div class="hs-item">
+          <div class="hs-icon">01</div>
+          <h3>Zero AI Interruption</h3>
+          <p>
+            Pure manual coding with no forced suggestions. Total control over
+            every line of code.
+          </p>
+        </div>
+        <div class="hs-item">
+          <div class="hs-icon">02</div>
+          <h3>Real-Time Metrics</h3>
+          <p>
+            Live performance analytics dashboard showing system health and
+            real-time data.
+          </p>
+        </div>
+        <div class="hs-item">
+          <div class="hs-icon">03</div>
+          <h3>Edge Deployment</h3>
+          <p>
+            Deploy to 100+ global edge locations in under 2 seconds with zero
+            configuration.
+          </p>
+        </div>
+        <div class="hs-item">
+          <div class="hs-icon">04</div>
+          <h3>Quantum Security</h3>
+          <p>
+            Military-grade encryption with zero-trust architecture protecting
+            your data.
+          </p>
+        </div>
+        <div class="hs-item">
+          <div class="hs-icon">05</div>
+          <h3>Infinite Scale</h3>
+          <p>
+            Auto-scaling infrastructure handling millions of concurrent requests
+            effortlessly.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== TESTIMONIALS ========== -->
-  <section class="testimonials-section fade-in">
-    <div class="container">
-      <div class="testimonial-card card-3d">
-        <div class="glass-prism-shimmer"></div>
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex Rivers" style="width:80px;height:80px;border-radius:50%;margin:0 auto 20px;border:3px solid #6366f1;object-fit:cover;display:block;">
-        <p class="client-feedback">"The glassmorphic interface coupled with beautiful fluid physics animations makes this one of the finest UI architectures I have ever deployed."</p>
-        <div class="client-info"><h5>Alex Rivers</h5><span>Lead UI/UX Architect</span></div>
+    <!-- ========== PRICING ========== -->
+    <section id="pricing" class="pricing-section fade-in">
+      <div class="container pricing-container-wrapper">
+        <div class="aurora-orb orb-deep-purple"></div>
+        <div class="aurora-orb orb-neon-cyan"></div>
+        <div class="aurora-orb orb-hot-magenta"></div>
+        <h2 class="section-title">Flexible <span>Pricing Plans</span></h2>
+        <div class="pricing-grid">
+          <div class="pricing-card card-3d">
+            <div class="glass-prism-shimmer"></div>
+            <div class="card-glow-intensity"></div>
+            <h4>Startup</h4>
+            <div class="price">$49<span>/mo</span></div>
+            <ul>
+              <li>✦ 5 Core AI Agents</li>
+              <li>✦ Standard Analytics</li>
+              <li>✦ 24/7 Support Suite</li>
+            </ul>
+            <button class="price-btn ripple-btn">Choose Startup</button>
+          </div>
+          <div class="pricing-card popular card-3d">
+            <div class="glass-prism-shimmer"></div>
+            <div class="card-glow-intensity"></div>
+            <div class="popular-tag">Most Popular</div>
+            <h4>Enterprise</h4>
+            <div class="price">$149<span>/mo</span></div>
+            <ul>
+              <li>✦ Unlimited AI Agents</li>
+              <li>✦ Advanced Deep Analytics</li>
+              <li>✦ Dedicated Specialist</li>
+            </ul>
+            <button class="price-btn ripple-btn">Choose Enterprise</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="main-footer">
-    <div class="container footer-container">
-      <div>© 2026 NOVA Technologies. Built with Pure Creative Artistry.</div>
-      <div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Github</a></div>
-    </div>
-  </footer>
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials-section fade-in">
+      <div class="container">
+        <div class="testimonial-card card-3d">
+          <div class="glass-prism-shimmer"></div>
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            alt="Alex Rivers"
+            style="
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+              margin: 0 auto 20px;
+              border: 3px solid #6366f1;
+              object-fit: cover;
+              display: block;
+            "
+          />
+          <p class="client-feedback">
+            "The glassmorphic interface coupled with beautiful fluid physics
+            animations makes this one of the finest UI architectures I have ever
+            deployed."
+          </p>
+          <div class="client-info">
+            <h5>Alex Rivers</h5>
+            <span>Lead UI/UX Architect</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- ========== BACK TO TOP ========== -->
-  <button class="back-to-top" id="backToTop">⬆</button>
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+      <div class="container footer-container">
+        <div>© 2026 NOVA Technologies. Built with Pure Creative Artistry.</div>
+        <div class="footer-links">
+          <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Github</a>
+        </div>
+      </div>
+    </footer>
 
-  <!-- ========== CONFETTI CANVAS ========== -->
-  <canvas id="confettiCanvas"></canvas>
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="backToTop">⬆</button>
 
-  <script>
-    // ========== ALL SCRIPTS ==========
-    
-    // Preloader
-    window.addEventListener('load', () => {
-      document.getElementById('preloader').classList.add('hidden');
-      setTimeout(() => document.getElementById('preloader').remove(), 800);
-    });
+    <!-- ========== CONFETTI CANVAS ========== -->
+    <canvas id="confettiCanvas"></canvas>
 
-    // Fade-in Observer
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-    }, { threshold: 0.2 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    <script>
+      // ========== ALL SCRIPTS ==========
 
-    // Header scroll effect
-    const header = document.getElementById('mainHeader');
-    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 100));
-
-    // Back to top
-    const backBtn = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => backBtn.classList.toggle('visible', window.scrollY > 500));
-    backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
-    // Custom cursor
-    const cursor = document.getElementById('cursorGlow');
-    document.addEventListener('mousemove', (e) => {
-      cursor.style.left = e.clientX + 'px';
-      cursor.style.top = e.clientY + 'px';
-    });
-
-    // Counters
-    const counters = document.querySelectorAll('.counter-number');
-    const counterObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const target = parseInt(entry.target.dataset.target);
-          let current = 0;
-          const increment = Math.ceil(target / 80);
-          const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) { entry.target.textContent = target.toLocaleString(); clearInterval(timer); }
-            else entry.target.textContent = current.toLocaleString();
-          }, 30);
-          counterObserver.unobserve(entry.target);
-        }
+      // Preloader
+      window.addEventListener("load", () => {
+        document.getElementById("preloader").classList.add("hidden");
+        setTimeout(() => document.getElementById("preloader").remove(), 800);
       });
-    }, { threshold: 0.5 });
-    counters.forEach(c => counterObserver.observe(c));
 
-    // Theme toggle
-    const themeBtn = document.getElementById('themeToggle');
-    let isDark = true;
-    themeBtn.addEventListener('click', () => {
-      document.body.classList.toggle('light-mode');
-      isDark = !isDark;
-      themeBtn.textContent = isDark ? '🌙 Dark' : '☀️ Light';
-    });
+      // Fade-in Observer
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.2 },
+      );
+      document
+        .querySelectorAll(".fade-in")
+        .forEach((el) => observer.observe(el));
 
-    // Music toggle
-    const musicBtn = document.getElementById('musicToggle');
-    let isMusicOn = false;
-    musicBtn.addEventListener('click', () => { isMusicOn = !isMusicOn; musicBtn.textContent = isMusicOn ? '🔊' : '🔇'; });
+      // Header scroll effect
+      const header = document.getElementById("mainHeader");
+      window.addEventListener("scroll", () =>
+        header.classList.toggle("scrolled", window.scrollY > 100),
+      );
 
-    // Ripple effect
-    document.querySelectorAll('.ripple-btn').forEach(btn => {
-      btn.addEventListener('click', function(e) {
-        const rect = this.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const ripple = document.createElement('span');
-        ripple.className = 'ripple-effect';
-        ripple.style.left = x + 'px';
-        ripple.style.top = y + 'px';
-        this.appendChild(ripple);
-        setTimeout(() => ripple.remove(), 800);
+      // Back to top
+      const backBtn = document.getElementById("backToTop");
+      window.addEventListener("scroll", () =>
+        backBtn.classList.toggle("visible", window.scrollY > 500),
+      );
+      backBtn.addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" }),
+      );
+
+      // Custom cursor
+      const cursor = document.getElementById("cursorGlow");
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
       });
-    });
 
-    // Parallax orbs
-    document.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      document.querySelectorAll('.orb-top-left, .orb-mid-right, .orb-bottom-left').forEach((orb, i) => {
-        orb.style.transform = `translateY(${scrollY * (0.3 + i * 0.1) * 0.2}px)`;
+      // Counters
+      const counters = document.querySelectorAll(".counter-number");
+      const counterObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const target = parseInt(entry.target.dataset.target);
+              let current = 0;
+              const increment = Math.ceil(target / 80);
+              const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                  entry.target.textContent = target.toLocaleString();
+                  clearInterval(timer);
+                } else entry.target.textContent = current.toLocaleString();
+              }, 30);
+              counterObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      counters.forEach((c) => counterObserver.observe(c));
+
+      // Music toggle
+      const musicBtn = document.getElementById("musicToggle");
+      let isMusicOn = false;
+      musicBtn.addEventListener("click", () => {
+        isMusicOn = !isMusicOn;
+        musicBtn.textContent = isMusicOn ? "🔊" : "🔇";
       });
-    });
 
-    // Horizontal scroll with mouse wheel
-    const scrollTrack = document.querySelector('.horizontal-scroll-track');
-    if (scrollTrack) {
-      const wrapper = scrollTrack.closest('.desktop-scroll');
-      if (wrapper) {
-        wrapper.addEventListener('wheel', (e) => {
-          e.preventDefault();
-          wrapper.scrollLeft += e.deltaY * 1.5;
+      // Ripple effect
+      document.querySelectorAll(".ripple-btn").forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          const rect = this.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const ripple = document.createElement("span");
+          ripple.className = "ripple-effect";
+          ripple.style.left = x + "px";
+          ripple.style.top = y + "px";
+          this.appendChild(ripple);
+          setTimeout(() => ripple.remove(), 800);
         });
-      }
-    }
-
-    // Badge text rotation
-    const badge = document.getElementById('badgeText');
-    const badgeTexts = ['⚡ Neural Interface v2.0 Active', '🚀 Ready for Launch', '✨ 100% AI-Powered', '🌌 Cosmic Experience'];
-    let badgeIndex = 0;
-    setInterval(() => {
-      badgeIndex = (badgeIndex + 1) % badgeTexts.length;
-      badge.style.opacity = '0';
-      setTimeout(() => { badge.textContent = badgeTexts[badgeIndex]; badge.style.opacity = '1'; }, 300);
-    }, 4000);
-
-    // Dynamic hero title changing
-    const heroTitle = document.getElementById('heroTitle');
-    const titles = ['Intelligence <span>Evolved</span>', 'Beyond <span>Limits</span>', 'Future <span>Ready</span>', 'Cosmic <span>Power</span>'];
-    let titleIndex = 0;
-    setInterval(() => {
-      titleIndex = (titleIndex + 1) % titles.length;
-      heroTitle.style.opacity = '0';
-      setTimeout(() => { heroTitle.innerHTML = titles[titleIndex]; heroTitle.style.opacity = '1'; }, 300);
-    }, 5000);
-
-    // 3D Sphere follow mouse
-    const sphere = document.getElementById('sphere3D');
-    document.addEventListener('mousemove', (e) => {
-      const x = (e.clientX / window.innerWidth - 0.5) * 20;
-      const y = (e.clientY / window.innerHeight - 0.5) * -20;
-      sphere.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
-    });
-
-    // ========== CONFETTI SYSTEM ==========
-    const canvas = document.getElementById('confettiCanvas');
-    const ctx = canvas.getContext('2d');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    let confettiPieces = [];
-    let confettiActive = false;
-
-    class Confetti {
-      constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height - canvas.height;
-        this.w = Math.random() * 10 + 5;
-        this.h = Math.random() * 6 + 3;
-        this.color = `hsl(${Math.random() * 360}, 80%, 60%)`;
-        this.vx = (Math.random() - 0.5) * 4;
-        this.vy = Math.random() * 3 + 2;
-        this.rotation = 0;
-        this.rotationSpeed = (Math.random() - 0.5) * 0.1;
-      }
-      update() {
-        this.x += this.vx + Math.sin(this.y * 0.01) * 0.5;
-        this.y += this.vy;
-        this.rotation += this.rotationSpeed;
-        if (this.y > canvas.height + 50) { this.y = -50; this.x = Math.random() * canvas.width; }
-      }
-      draw() {
-        ctx.save();
-        ctx.translate(this.x, this.y);
-        ctx.rotate(this.rotation);
-        ctx.fillStyle = this.color;
-        ctx.fillRect(-this.w/2, -this.h/2, this.w, this.h);
-        ctx.restore();
-      }
-    }
-
-    function launchConfetti() {
-      confettiActive = true;
-      confettiPieces = [];
-      for (let i = 0; i < 300; i++) confettiPieces.push(new Confetti());
-      setTimeout(() => { confettiActive = false; }, 5000);
-    }
-
-    function animateConfetti() {
-      if (!confettiActive && confettiPieces.length === 0) { ctx.clearRect(0, 0, canvas.width, canvas.height); requestAnimationFrame(animateConfetti); return; }
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      confettiPieces.forEach(p => { p.update(); p.draw(); });
-      if (confettiActive) requestAnimationFrame(animateConfetti);
-      else if (confettiPieces.length > 0) requestAnimationFrame(animateConfetti);
-    }
-    animateConfetti();
-
-    document.getElementById('confettiBtn').addEventListener('click', launchConfetti);
-
-    // Nav link active
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', function() {
-        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-        this.classList.add('active');
       });
-    });
 
-    // Window resize for canvas
-    window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
-  </script>
-</body>
+      // Parallax orbs
+      document.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        document
+          .querySelectorAll(".orb-top-left, .orb-mid-right, .orb-bottom-left")
+          .forEach((orb, i) => {
+            orb.style.transform = `translateY(${scrollY * (0.3 + i * 0.1) * 0.2}px)`;
+          });
+      });
+
+      // Horizontal scroll with mouse wheel
+      const scrollTrack = document.querySelector(".horizontal-scroll-track");
+      if (scrollTrack) {
+        const wrapper = scrollTrack.closest(".desktop-scroll");
+        if (wrapper) {
+          wrapper.addEventListener("wheel", (e) => {
+            e.preventDefault();
+            wrapper.scrollLeft += e.deltaY * 1.5;
+          });
+        }
+      }
+
+      // Badge text rotation
+      const badge = document.getElementById("badgeText");
+      const badgeTexts = [
+        "⚡ Neural Interface v2.0 Active",
+        "🚀 Ready for Launch",
+        "✨ 100% AI-Powered",
+        "🌌 Cosmic Experience",
+      ];
+      let badgeIndex = 0;
+      setInterval(() => {
+        badgeIndex = (badgeIndex + 1) % badgeTexts.length;
+        badge.style.opacity = "0";
+        setTimeout(() => {
+          badge.textContent = badgeTexts[badgeIndex];
+          badge.style.opacity = "1";
+        }, 300);
+      }, 4000);
+
+      // Dynamic hero title changing
+      const heroTitle = document.getElementById("heroTitle");
+      const titles = [
+        "Intelligence <span>Evolved</span>",
+        "Beyond <span>Limits</span>",
+        "Future <span>Ready</span>",
+        "Cosmic <span>Power</span>",
+      ];
+      let titleIndex = 0;
+      setInterval(() => {
+        titleIndex = (titleIndex + 1) % titles.length;
+        heroTitle.style.opacity = "0";
+        setTimeout(() => {
+          heroTitle.innerHTML = titles[titleIndex];
+          heroTitle.style.opacity = "1";
+        }, 300);
+      }, 5000);
+
+      // 3D Sphere follow mouse
+      const sphere = document.getElementById("sphere3D");
+      document.addEventListener("mousemove", (e) => {
+        const x = (e.clientX / window.innerWidth - 0.5) * 20;
+        const y = (e.clientY / window.innerHeight - 0.5) * -20;
+        sphere.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+      });
+
+      // ========== CONFETTI SYSTEM ==========
+      const canvas = document.getElementById("confettiCanvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      let confettiPieces = [];
+      let confettiActive = false;
+
+      class Confetti {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height - canvas.height;
+          this.w = Math.random() * 10 + 5;
+          this.h = Math.random() * 6 + 3;
+          this.color = `hsl(${Math.random() * 360}, 80%, 60%)`;
+          this.vx = (Math.random() - 0.5) * 4;
+          this.vy = Math.random() * 3 + 2;
+          this.rotation = 0;
+          this.rotationSpeed = (Math.random() - 0.5) * 0.1;
+        }
+        update() {
+          this.x += this.vx + Math.sin(this.y * 0.01) * 0.5;
+          this.y += this.vy;
+          this.rotation += this.rotationSpeed;
+          if (this.y > canvas.height + 50) {
+            this.y = -50;
+            this.x = Math.random() * canvas.width;
+          }
+        }
+        draw() {
+          ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.rotate(this.rotation);
+          ctx.fillStyle = this.color;
+          ctx.fillRect(-this.w / 2, -this.h / 2, this.w, this.h);
+          ctx.restore();
+        }
+      }
+
+      function launchConfetti() {
+        confettiActive = true;
+        confettiPieces = [];
+        for (let i = 0; i < 300; i++) confettiPieces.push(new Confetti());
+        setTimeout(() => {
+          confettiActive = false;
+        }, 5000);
+      }
+
+      function animateConfetti() {
+        if (!confettiActive && confettiPieces.length === 0) {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          requestAnimationFrame(animateConfetti);
+          return;
+        }
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        confettiPieces.forEach((p) => {
+          p.update();
+          p.draw();
+        });
+        if (confettiActive) requestAnimationFrame(animateConfetti);
+        else if (confettiPieces.length > 0)
+          requestAnimationFrame(animateConfetti);
+      }
+      animateConfetti();
+
+      document
+        .getElementById("confettiBtn")
+        .addEventListener("click", launchConfetti);
+
+      // Nav link active
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", function () {
+          document
+            .querySelectorAll(".nav-link")
+            .forEach((l) => l.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+
+      // Window resize for canvas
+      window.addEventListener("resize", () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
+    </script>
+  </body>
 </html>
