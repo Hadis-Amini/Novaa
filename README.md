@@ -1,3 +1,4 @@
+
 #  NOVA — Cosmic Experience Landing Page
 
 A modern, futuristic landing page built with pure HTML & CSS.  
@@ -33,8 +34,8 @@ http://nova-cosmic-landing-page.netlify.app/
 ##  Screenshots
 
 <h3>Desktop</h3>
-<img src="https://github.com/user-attachments/assets/4542d931-c341-42ac-b14e-bbb597ddb01d" width="700">
+
 <h3>Mobile</h3>
-<img src="https://github.com/user-attachments/assets/ba477f77-4307-41a7-9388-126e443ee4db" width="250">
+<img width="665" height="1280" alt="photo_2026-10-25_12-32-55" src="https://github.com/user-attachments/assets/c67d658c-66fc-4f5d-a0dd-0546ae06e606" />
 
 
