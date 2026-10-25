@@ -33,8 +33,6 @@ http://nova-cosmic-landing-page.netlify.app/
 
 ##  Screenshots
 
-<h3>Desktop</h3>
-
 <h3>Mobile</h3>
 <img width="665" height="1280" alt="photo_2026-10-25_12-32-55" src="https://github.com/user-attachments/assets/c67d658c-66fc-4f5d-a0dd-0546ae06e606" />
 
